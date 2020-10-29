@@ -1,0 +1,346 @@
+body {
+    background-image: url('../img/Glass13Portrait.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 450vw;
+    animation: drink 30s forwards;
+}
+
+@keyframes drink {
+    0% {
+        background-image: url('../img/Glass13Portrait.jpg');
+    }
+    10% {
+        background-image: url('../img/Glass12Portrait.jpg');
+    }
+    17.5% {
+        background-image: url('../img/Glass11Portrait.jpg');
+    }
+    25% {
+        background-image: url('../img/Glass10Portrait.jpg');
+    }
+    32.5% {
+        background-image: url('../img/Glass9Portrait.jpg');
+    }
+    40% {
+        background-image: url('../img/Glass8Portrait.jpg');
+    }
+    47.5% {
+        background-image: url('../img/Glass7Portrait.jpg');
+    }
+    55% {
+        background-image: url('../img/Glass6Portrait.jpg');
+    }
+    62.5% {
+        background-image: url('../img/Glass5Portrait.jpg');
+    }
+    70% {
+        background-image: url('../img/Glass4Portrait.jpg');
+    }
+    77.5% {
+        background-image: url('../img/Glass3Portrait.jpg');
+    }
+    85% {
+        background-image: url('../img/Glass2Portrait.jpg');
+    }
+    92.5% {
+        background-image: url('../img/Glass1Portrait.jpg');
+    }
+    100% {
+        background-image: url('../img/Glass0Portrait.jpg');
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-image: url('../img/Glass13Landscape.jpg');
+        height: 200vw;
+    }
+
+    @keyframes drink {
+        0% {
+        background-image: url('../img/Glass13Landscape.jpg');
+        }
+        10% {
+            background-image: url('../img/Glass12Landscape.jpg');
+        }
+        17.5% {
+            background-image: url('../img/Glass11Landscape.jpg');
+        }
+        25% {
+            background-image: url('../img/Glass10Landscape.jpg');
+        }
+        32.5% {
+            background-image: url('../img/Glass9Landscape.jpg');
+        }
+        40% {
+            background-image: url('../img/Glass8Landscape.jpg');
+        }
+        47.5% {
+            background-image: url('../img/Glass7Landscape.jpg');
+        }
+        55% {
+            background-image: url('../img/Glass6Landscape.jpg');
+        }
+        62.5% {
+            background-image: url('../img/Glass5Landscape.jpg');
+        }
+        70% {
+            background-image: url('../img/Glass4Landscape.jpg');
+        }
+        77.5% {
+            background-image: url('../img/Glass3Landscape.jpg');
+        }
+        85% {
+            background-image: url('../img/Glass2Landscape.jpg');
+        }
+        92.5% {
+            background-image: url('../img/Glass1Landscape.jpg');
+        }
+        100% {
+            background-image: url('../img/Glass0Landscape.jpg');
+        }
+    }
+}
+
+#question {
+    position: absolute;
+    left: 10vw;
+    top: 60vw;
+    width: 80vw;
+    height: 27vw;
+    color: rgb(165,55,30);
+    text-align: right;
+}
+
+@media only screen and (orientation: landscape) {
+    #question {
+        left: 40vw;
+        top: 0vw;
+        width: 55vw;
+        height: 21vw;
+    }
+}
+
+#cushion {
+    width: 80vw;
+    height: 27vw;
+    shape-outside: polygon(45vw 0vw, 45vw 11vw, 35vw 20vw, 80vw 27vw, 0vw 27vw);
+    float: left;
+}
+
+@media only screen and (orientation: landscape) {
+    #cushion {
+        width: 55vw;
+        height: 21vw;
+        shape-outside: polygon(0vw 0vw, 22vw 5vw, 22vw 10vw, 18vw 15vw, 55vw 21vw, 0vw 21vw);
+    }
+}
+
+article {
+    position: absolute;
+    left: 10vw;
+    top: 220vw;
+    width: 80vw;
+}
+
+@media only screen and (orientation: landscape) {
+    article {
+        top: 90vw;
+    }
+}
+
+#brewery div {
+    float: left;
+    width: 40vw;
+    height: 28vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #brewery div {
+        width: 20vw;
+        height: 24vw;
+    }
+}
+
+.circle, .square {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    text-align: center;
+    color: rgba(0,0,0,0);
+}
+
+.circle {
+    width: 26vw;
+    height: 26vw;
+    border-radius: 13vw;
+    margin: 2vw 7vw 0vw 7vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .circle {
+        width: 18vw;
+        height: 18vw;
+        border-radius: 9vw;
+        margin: 4vw 1vw 2vw 1vw;
+    }
+}
+
+.circle:hover {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 14vw;
+    margin: 1vw 6vw -1vw 6vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .circle:hover {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 10vw;
+        margin: 3vw 0vw 1vw 0vw;
+    }
+}
+
+.circle:active {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 12vw;
+    margin: 3vw 8vw 1vw 8vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .circle:active {
+        width: 16vw;
+        height: 16vw;
+        border-radius: 8vw;
+        margin: 5vw 2vw 3vw 2vw;
+    }
+}
+
+.square {
+    width: 24vw;
+    height: 24vw;
+    margin: 3vw 8vw 1vw 8vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .square {
+        width: 16vw;
+        height: 16vw;
+        margin: 5vw 2vw 3vw 2vw;
+    }
+}
+
+.square:hover {
+    width: 26vw;
+    height: 26vw;
+    margin: 2vw 7vw 0vw 7vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .square:hover {
+        width: 18vw;
+        height: 18vw;
+        margin: 4vw 1vw 2vw 1vw;
+    }
+}
+
+.square:active {
+    width: 22vw;
+    height: 22vw;
+    margin: 4vw 9vw 2vw 9vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .square:active {
+        width: 14vw;
+        height: 14vw;
+        margin: 6vw 3vw 4vw 3vw;
+    }
+}
+
+.butts {
+    background-image: url('../img/Butts.png');
+    border-radius: 7vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .butts {
+        border-radius: 4vw;
+    }
+}
+
+.darkstar {
+    background-image: url('../img/DarkStar.png');
+}
+
+.greatheck {
+    background-image: url('../img/GreatHeck.png');
+    border-radius: 0vw 0vw 13vw 13vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .greatheck {
+        border-radius: 0vw 0vw 9vw 9vw;
+    }
+}
+
+.ilkley {
+    background-image: url('../img/Ilkley.png');
+}
+
+.loddon {
+    background-image: url('../img/Loddon.png');
+}
+
+.mallinsons {
+    background-image: url('../img/Mallinsons.jpg');
+}
+
+.oakham {
+    background-image: url('../img/Oakham.png');
+}
+
+.salopian {
+    background-image: url('../img/Salopian.png');
+}
+
+.siren {
+    background-image: url('../img/Siren.png');
+}
+
+.tapsocial {
+    background-image: url('../img/TapSocial.jpg');
+}
+
+.thornbridge {
+    background-image: url('../img/Thornbridge.jpg');
+}
+
+.tinyrebel {
+    background-image: url('../img/TinyRebel.jpg');
+}
+
+.vibrantforest {
+    background-image: url('../img/VibrantForest.png');
+}
+
+.xt {
+    background-image: url('../img/XT.jpg');
+}
+
+
+/* Footer position */
+
+footer {
+    top: 433.25vw;
+}
+
+@media only screen and (orientation: landscape) {
+    footer {
+        top: 197.25vw;
+    }
+}
