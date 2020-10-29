@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Homemade+Apple&family=Just+Another+Hand&family=La+Belle+Aurore&family=Nothing+You+Could+Do&family=Sedgwick+Ave&family=Special+Elite&display=swap');
+
+#wall {
+    perspective-origin: 50vw -81.5vw;
+    perspective: 83vw;
+    position: absolute;
+    width: 30vw;
+    left: 20vw;
+    top: 230vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #wall {
+        perspective-origin: -20vw 38vw;
+        perspective: 56vw;
+        width: 16vw;
+        left: 84vw;
+        top: 61vw;
+    }
+}
+
+#comments {
+    transform-style: preserve-3d;
+    transform: rotateX(7deg) rotateY(-20deg);
+}
+
+#reviews {
+    transform-style: preserve-3d;
+    transform: translate(0,0) scale(2);
+    position: absolute;
+    width: 30vw;
+    left: 0vw;
+    top: 0vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #reviews {
+        transform: translate(0,0) scale(1);
+        width: 8vw;
+    }
+}
+
+#reviews q {
+    display: block;
+}
+
+#reviews p {
+    text-align: right;
+}
+
+#zoomp:checked ~ #reviews {
+    animation: zoominp 2s both;
+}
+
+@keyframes zoominp {
+    from {
+        transform: translate(0,0) scale(2);
+    }
+    to {
+        transform: rotateX(-7deg) rotateY(20deg) translate(45vw,90vw) scale(5);
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #zooml:checked ~ #reviews {
+        animation: zoominl 2s both;
+    }
+
+    @keyframes zoominl {
+        from {
+            transform: translate(0,0) scale(1);
+        }
+        to {
+            transform: translate(-10vw,25vw) scale(3);
+        }
+    }
+}
+
+#brick {
+    position: absolute;
+    width: 21vw;
+    height: 7vw;
+    left: 29vw;
+    top: -43vw;
+    font-size: 3vw;
+    line-height: 3.5vw;
+    text-align: center;
+    color: rgb(100,100,100);
+}
+
+@media only screen and (orientation: landscape) {
+    #alarm {
+        position: absolute;
+        width: 11vw;
+        height: 4vw;
+        left: -1vw;
+        top: 41vw;
+        font-size: 1.6vw;
+        line-height: 2.2vw;
+        text-align: left;
+        color: rgb(205,0,30);
+        z-index: 0;
+    }
+}
+
+.postit, .notebook, .typed {
+    box-shadow: 0.1vw 0.1vw 0.2vw rgb(70,85,70);
+}
+
+.postit {
+    background-color: rgb(250,235,140);
+    width: 4vw;
+    height: 4vw;
+    padding: 0.5vw;
+}
+
+.notebook {
+    background-image: url('../img/Notebook.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 4vw;
+    height: 6vw;
+    padding: 0.5vw;
+}
+
+.typed {
+    background-image: url('../img/FoldedPaper.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 6vw;
+    height: 9vw;
+    padding: 0.75vw;
+}
+
+.Lesley {
+    font-family: 'Just Another Hand', 'Segoe Script', 'Apple Casual Regular', cursive;
+    transform: rotate(5deg) translate(0vw,-3vw);
+}
+
+@media only screen and (orientation: landscape) {
+    .Lesley {
+        transform: rotate(5deg) translate(2vw,-1vw);
+    }
+}
+
+.Lesley q {
+    font-size: 0.7vw;
+}
+
+.Lesley p {
+    font-size: 0.6vw;
+}
+
+.Robin {
+    font-family: 'Nothing You Could Do', 'Lucida Handwriting', 'Textile', cursive;
+    padding-top: 0.9vw;
+    transform: rotate(-10deg) translate(1vw,-3vw);
+}
+
+@media only screen and (orientation: landscape) {
+    .Robin {
+        padding-top: 0.85vw;
+        transform: rotate(-10deg) translate(0vw,-1vw);
+    }
+}
+
+.Robin q {
+    font-size: 0.4vw;
+    line-height: 0.46vw;
+}
+
+.Robin p {
+    font-size: 0.3vw;
+}
+
+.Paul {
+    font-family: 'Homemade Apple', 'Lucida Calligraphy', 'Zapf Chancery', cursive;
+    transform: rotate(15deg) translate(9vw,-16vw);
+}
+
+@media only screen and (orientation: landscape) {
+    .Paul {
+        transform: rotate(0deg) translate(1vw,-3vw);
+    }
+}
+
+.Paul q {
+    font-size: 0.35vw;
+}
+
+.Paul p {
+    font-size: 0.25vw;
+}
+
+.Linda {
+    font-family: 'Special Elite', 'Courier New', 'American Typewriter', cursive;
+    transform: rotate(-5deg) translate(8vw,-28vw);
+}
+
+@media only screen and (orientation: landscape) {
+    .Linda {
+        transform: rotate(-5deg) translate(0.5vw,-6vw);
+    }
+}
+
+.Linda q {
+    font-size: 0.4vw;
+}
+
+.Linda p {
+    font-size: 0.3vw;
+    line-height: 0.4vw;
+}
+
+.Mike {
+    font-family: 'Sedgwick Ave', 'Segoe Print', 'Comic Sans', cursive;
+    padding-top: 1vw;
+    transform: rotate(15deg) translate(-1vw,-10vw);
+}
+
+@media only screen and (orientation: landscape) {
+    .Mike {
+        padding-top: 0.85vw;
+        transform: rotate(15deg) translate(0vw,-3vw);
+    }
+}
+
+.Mike q {
+    font-size: 0.35vw;
+    line-height: 0.46vw;
+}
+
+.Mike p {
+    font-size: 0.25vw;
+}
+
+.Alex {
+    font-family: 'Cedarville Cursive', 'Lucida Handwriting', 'Brush Script', cursive;
+    padding-top: 1vw;
+    transform: rotate(5deg) translate(9vw,-37vw);
+}
+
+@media only screen and (orientation: landscape) {
+    .Alex {
+        padding-top: 0.86vw;
+        transform: rotate(15deg) translate(-1vw,-8vw);
+    }
+}
+
+.Alex q {
+    font-size: 0.4vw;
+    line-height: 0.46vw;
+}
+
+.Alex p {
+    font-size: 0.3vw;
+    line-height: 0.4vw;
+}
+
+.Chris {
+    font-family: 'La Belle Aurore', 'Freestyle Script', 'Marker Felt', cursive;
+    transform: rotate(-15deg) translate(15vw,-28vw);
+}
+
+@media only screen and (orientation: landscape) {
+    .Chris {
+        transform: rotate(10deg) translate(-1vw,-8vw);
+    }
+}
+
+.Chris q {
+    font-size: 0.85vw;
+    line-height: 0.85vw;
+}
+
+.Chris p {
+    font-size: 0.45vw;
+    line-height: 0.6vw;
+}
