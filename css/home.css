@@ -1,0 +1,182 @@
+/* Default layout is for portrait orientation */
+
+
+body {
+    height: 462.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        height: 296.5vw;
+    }
+}
+
+/* Header image */
+
+#exterior {
+    background-image: url('../img/ExteriorPortrait.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100vw;
+    height: 112.5vw;
+    left: 0vw;
+    top: 0vw;
+    animation: outside 10s forwards;
+}
+
+@keyframes outside {
+    from {
+        background-size: 150%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #exterior {
+        background-image: url('../img/ExteriorLandscape.jpg');
+        height: 66.5vw;
+    }
+}
+
+
+/* Introduction */
+
+main {
+    background-image: url('../img/WoodenBase.jpg'), url('../img/BoardPortrait.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 351.5vw;
+    left: 0vw;
+    top: 112.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    main {
+        background-image: url('../img/WoodenBase.jpg'), url('../img/BoardLandscape.jpg');
+        height: 201.5vw;
+        top: 66.5vw;
+    }
+}
+
+#atmosphere {
+    position: absolute;
+    width: 38vw;
+    height: 42vw;
+    left: 5vw;
+    top: 6.5vw;
+    color: rgb(235,220,205);
+}
+
+@media only screen and (orientation: landscape) {
+    #atmosphere {
+        width: 40vw;
+        height: 27vw;
+    }
+}
+
+#left {
+    width: 38vw;
+    height: 42vw;
+    shape-outside: polygon(0vw 0vw, 38vw 0vw, 38vw 42vw, 25vw 42vw, 37vw 35vw, 37vw 32vw, 0vw 6vw);
+    float: right;
+}
+
+@media only screen and (orientation: landscape) {
+    #left {
+        width: 40vw;
+        height: 27vw;
+        shape-outside: polygon(10vw 0vw, 40vw 0vw, 40vw 27vw, 0vw 27vw, 39vw 20vw);
+    }
+}
+
+#introduction {
+    position: absolute;
+    width: 52vw;
+    height: 42vw;
+    left: 43vw;
+    top: 6.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #introduction {
+        width: 50vw;
+        height: 27vw;
+        left: 45vw;
+    }
+}
+
+#introduction a {
+    color: rgb(35,55,55);
+}
+
+#right {
+    width: 52vw;
+    height: 42vw;
+    shape-outside: polygon(0vw 0vw, 2vw 0vw, 40vw 32vw, 40vw 36vw, 33vw 37vw, 37vw 42vw, 0vw 42vw);
+    float: left;
+}
+
+@media only screen and (orientation: landscape) {
+    #right {
+        width: 50vw;
+        height: 27vw;
+        shape-outside: polygon(0vw 0vw, 5vw 0vw, 30vw 19vw, 30vw 22vw, 23vw 23vw, 26vw 27vw, 0vw 27vw);
+    }
+}
+
+#speciality {
+    position: absolute;
+    width: 58vw;
+    height: 42vw;
+    left: 5vw;
+    top: 48.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #speciality {
+        width: 53vw;
+        height: 27vw;
+        top: 33.5vw;
+    }
+}
+
+#ceiling {
+    width: 58vw;
+    height: 42vw;
+    shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 21vw);
+    float: left;
+}
+
+@media only screen and (orientation: landscape) {
+    #ceiling {
+        width: 53vw;
+        height: 27vw;
+        shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 22vw);
+    }
+}
+
+
+/* Hidden checkbox position */
+
+.hidden {
+    position: absolute;
+    left: -200vw;
+}
+
+
+/* Footer position */
+
+footer {
+    top: 432.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    footer {
+        top: 266.5vw;
+    }
+}
