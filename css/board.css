@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Eater&family=Henny+Penny&family=Kranky&family=Life+Savers:wght@800&family=Love+Ya+Like+A+Sister&family=Miltonian&family=Patrick+Hand+SC&family=Ribeye+Marrow&family=Walter+Turncoat&display=swap');
+
+
+#board {
+    perspective-origin: 70vw 148.5vw;
+    perspective: 83vw;
+    font-size: 1.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #board {
+        perspective-origin: 64vw 99vw;
+        perspective: 56vw;
+    }
+}
+
+#boardback {
+    background-image: url('../img/BoardBack.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: people 64s infinite;
+    position: absolute;
+    left: 0.5vw;
+    top: 91.5vw;
+    width: 59vw;
+    height: 79vw;
+    transform-style: preserve-3d;
+    transform: rotateX(7deg) rotateY(-20deg);
+}
+
+@media only screen and (orientation: landscape) {
+    #boardback {
+        left: 16vw;
+        top: 61vw;
+        width: 40vw;
+        height: 53vw;
+    }
+}
+
+@keyframes people {
+    0% {
+        background-image: url('../img/BoardBack.jpg');
+    }
+    4% {
+        background-image: url('../img/BoardBackOne.jpg');
+    }
+    10% {
+        background-image: url('../img/BoardBackTwo.jpg');
+    }
+    16% {
+        background-image: url('../img/BoardBackThree.jpg');
+    }
+    22% {
+        background-image: url('../img/BoardBackFour.jpg');
+    }
+    28% {
+        background-image: url('../img/BoardBackFive.jpg');
+    }
+    34% {
+        background-image: url('../img/BoardBackSix.jpg');
+    }
+    40% {
+        background-image: url('../img/BoardBackSeven.jpg');
+    }
+    46% {
+        background-image: url('../img/BoardBackEight.jpg');
+    }
+    52% {
+        background-image: url('../img/BoardBackNine.jpg');
+    }
+    58% {
+        background-image: url('../img/BoardBackTen.jpg');
+    }
+    64% {
+        background-image: url('../img/BoardBackEleven.jpg');
+    }
+    70% {
+        background-image: url('../img/BoardBackTwelve.jpg');
+    }
+    76% {
+        background-image: url('../img/BoardBackThirteen.jpg');
+    }
+    82% {
+        background-image: url('../img/BoardBackFourteen.jpg');
+    }
+    88% {
+        background-image: url('../img/BoardBackFifteen.jpg');
+    }
+    94% {
+        background-image: url('../img/BoardBackSixteen.jpg');
+    }
+    100% {
+        background-image: url('../img/BoardBack.jpg');
+    }
+}
+
+.tab::after {
+    content: " ";
+    position: absolute;
+    width: 59vw;
+    height: 6vw;
+    border-radius: 0vw 1vw 1vw 0vw;
+    background-image: url('../img/Tab.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: -0.1vw -0.1vw rgb(255,255,255), 0.1vw 0.1vw rgb(35,55,55);
+    line-height: 6vw;
+    text-align: center;
+}
+
+@media only screen and (orientation: landscape) {
+    .tab::after {
+        width: 40vw;
+        height: 4.25vw;
+        line-height: 4vw;
+    }
+}
+
+#loadone:checked ~ .one::after, #loadtwo:checked ~ .two::after, #loadthree:checked ~ .three::after, #loadfour:checked ~ .four::after, #loadfive:checked ~ .five::after, #loadsix:checked ~ .six::after, #loadseven:checked ~ .seven::after, #loadeight:checked ~ .eight::after, #loadnine:checked ~ .nine::after, #loadten:checked ~ .ten::after {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.one::after, #first {
+    left: 31vw;
+    top: 0vw;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 2.8vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .one::after, #first {
+        top: 0vw;
+        font-size: 1.8vw;
+    }
+}
+
+#loadone:checked ~ .one::after {
+    animation-name: firsttab;
+}
+
+@keyframes firsttab {
+    from {
+        content: " ";
+        left: 31vw;
+    }
+    to {
+        content: "A famously quirky three sided bar...";
+        left: 0vw;
+    }
+}
+
+.two::after, #second {
+    left: 36vw;
+    top: 8vw;
+    font-family: 'Kranky', cursive;
+    font-variant: small-caps;
+    font-size: 3vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .two::after, #second {
+        top: 5.25vw;
+        font-size: 2vw;
+    }
+}
+
+#loadtwo:checked ~ .two::after {
+    animation-name: secondtab;
+}
+
+@keyframes secondtab {
+    from {
+        content: " ";
+        left: 36vw;
+    }
+    to {
+        content: "...an open fireplace and a comfy snug...";
+        left: 0vw;
+    }
+}
+
+.three::after, #third {
+    left: 26vw;
+    top: 16vw;
+    font-family: 'Henny Penny', cursive;
+    font-variant: small-caps;
+    font-size: 2.6vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .three::after, #third {
+        top: 10.5vw;
+        font-size: 1.8vw;
+    }
+}
+
+#loadthree:checked ~ .three::after {
+    animation-name: thirdtab;
+}
+
+@keyframes thirdtab {
+    from {
+        content: " ";
+        left: 26vw;
+    }
+    to {
+        content: "...all help make it a welcoming place.";
+        left: 0vw;
+    }
+}
+
+.four::after, #fourth {
+    left: 33vw;
+    top: 24vw;
+    font-family: 'Eater', cursive;
+    font-size: 3vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .four::after, #fourth {
+        top: 15.75vw;
+        font-size: 2vw;
+    }
+}
+
+#loadfour:checked ~ .four::after {
+    animation-name: fourthtab;
+}
+
+@keyframes fourthtab {
+    from {
+        content: " ";
+        left: 33vw;
+    }
+    to {
+        content: "Of course, the real feel...";
+        left: 0vw;
+    }
+}
+
+.five::after, #fifth {
+    left: 23vw;
+    top: 32.25vw;
+    font-family: 'Life Savers', cursive;
+    font-variant: small-caps;
+    font-size: 3.8vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .five::after, #fifth {
+        top: 21.25vw;
+        font-size: 2.6vw;
+    }
+}
+
+#loadfive:checked ~ .five::after {
+    animation-name: fifthtab;
+}
+
+@keyframes fifthtab {
+    from {
+        content: " ";
+        left: 23vw;
+    }
+    to {
+        content: "...is down to our customers.";
+        left: 0vw;
+    }
+}
+
+.six::after, #sixth {
+    left: 29vw;
+    top: 40.25vw;
+    font-family: 'Miltonian', cursive;
+    font-variant: small-caps;
+    font-size: 3.8vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .six::after, #sixth {
+        top: 26.75vw;
+        font-size: 2.6vw;
+    }
+}
+
+#loadsix:checked ~ .six::after {
+    animation-name: sixthtab;
+}
+
+@keyframes sixthtab {
+    from {
+        content: " ";
+        left: 29vw;
+    }
+    to {
+        content: "We are proud to be home...";
+        left: 0vw;
+    }
+}
+
+.seven::after, #seventh {
+    left: 24vw;
+    top: 48.5vw;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-variant: small-caps;
+    font-size: 4vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .seven::after, #seventh {
+        top: 32.25vw;
+        font-size: 2.6vw;
+    }
+}
+
+#loadseven:checked ~ .seven::after {
+    animation-name: seventhtab;
+}
+
+@keyframes seventhtab {
+    from {
+        content: " ";
+        left: 24vw;
+    }
+    to {
+        content: "...to a whole host of characters.";
+        left: 0vw;
+    }
+}
+
+.eight::after, #eighth {
+    left: 34vw;
+    top: 56.75vw;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 4.2vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .eight::after, #eighth {
+        top: 37.75vw;
+        font-size: 3vw;
+    }
+}
+
+#loadeight:checked ~ .eight::after {
+    animation-name: eighthtab;
+}
+
+@keyframes eighthtab {
+    from {
+        content: " ";
+        left: 34vw;
+    }
+    to {
+        content: "Artists, brewers, musicians...";
+        left: 0vw;
+    }
+}
+
+.nine::after, #ninth {
+    left: 27vw;
+    top: 64.75vw;
+    font-family: 'Ribeye Marrow', cursive;
+    font-variant: small-caps;
+    font-size: 3.6vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .nine::after, #ninth {
+        top: 43.25vw;
+        font-size: 2.4vw;
+    }
+}
+
+#loadnine:checked ~ .nine::after {
+    animation-name: ninthtab;
+}
+
+@keyframes ninthtab {
+    from {
+        content: " ";
+        left: 27vw;
+    }
+    to {
+        content: "...scientists and craftsmen.";
+        left: 0vw;
+    }
+}
+
+.ten::after, #tenth {
+    left: 32vw;
+    top: 73vw;
+    font-family: 'Bigelow Rules', cursive;
+    font-variant: small-caps;
+    font-size: 5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    .ten::after, #tenth {
+        top: 48.75vw;
+        font-size: 3.4vw;
+    }
+}
+
+#loadten:checked ~ .ten::after {
+    animation-name: tenthtab;
+}
+
+@keyframes tenthtab {
+    from {
+        content: " ";
+        left: 32vw;
+        text-align: right;
+    }
+    to {
+        content: "You're certain to find a great conversation.";
+        left: 0vw;
+        text-align: center;
+    }
+}
+
+label {
+    position: absolute;
+    width: 59vw;
+    height: 6vw;
+    z-index: 1;
+    color: rgba(0,0,0,0);
+    line-height: 6vw;
+    text-align: right;
+}
+
+@media only screen and (orientation: landscape) {
+    label {
+        width: 40vw;
+        height: 4.25vw;
+        line-height: 4.25vw;
+    }
+}
+
+#frame {
+    background-image: url('../img/BoardFramePortrait.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 80vw;
+    width: 62.5vw;
+    height: 110vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #frame {
+        background-image: url('../img/BoardFrameLandscape.png');
+        left: 15vw;
+        top: 50vw;
+        width: 45vw;
+        height: 75vw;
+    }
+}

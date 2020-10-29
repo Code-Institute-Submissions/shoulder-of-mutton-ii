@@ -28,7 +28,7 @@ body {
 /* Navigation menu */
 
 nav {
-    background-image: url('img/BeerPumpHandles.png');
+    background-image: url('../img/BeerPumpHandles.png');
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
@@ -38,7 +38,7 @@ nav {
 
 @media only screen and (orientation: landscape) {
     nav {
-        background-image: url('img/WoodenPole.jpg');
+        background-image: url('../img/WoodenPole.jpg');
         width: 3vw;
         height: 56vw;
         left: 10.5vw;
@@ -56,7 +56,7 @@ nav {
 }
 
 #home {
-    background-image: url('img/UnselectedLogo.png');
+    background-image: url('../img/UnselectedLogo.png');
     width: 24vw;
     height: 24vw;
     top: 6vw;
@@ -73,11 +73,11 @@ nav {
 }
 
 #home.selected {
-    background-image: url('img/SelectedLogo.png');
+    background-image: url('../img/SelectedLogo.png');
 }
 
 #home:hover {
-    background-image: url('img/HoveredLogo.png');
+    background-image: url('../img/HoveredLogo.png');
     width: 25vw;
     height: 25vw;
     left: 5.5vw;
@@ -94,7 +94,7 @@ nav {
 }
 
 #home:active {
-    background-image: url('img/ClickedLogo.png');
+    background-image: url('../img/ClickedLogo.png');
     width: 23vw;
     height: 23vw;
     left: 6.5vw;
@@ -150,7 +150,7 @@ nav {
 }
 
 #beers {
-    background-image: url('img/UnselectedBeers.png');
+    background-image: url('../img/UnselectedBeers.png');
     left: 33vw;
 }
 
@@ -162,11 +162,11 @@ nav {
 }
 
 #beers.selected {
-    background-image: url('img/SelectedBeers.png');
+    background-image: url('../img/SelectedBeers.png');
 }
 
 #beers:hover {
-    background-image: url('img/HoveredBeers.png');
+    background-image: url('../img/HoveredBeers.png');
     left: 32.5vw;
 }
 
@@ -178,7 +178,7 @@ nav {
 }
 
 #beers:active {
-    background-image: url('img/ClickedBeers.png');
+    background-image: url('../img/ClickedBeers.png');
     left: 33.5vw;
 }
 
@@ -190,7 +190,7 @@ nav {
 }
 
 #rooms {
-    background-image: url('img/UnselectedRooms.png');
+    background-image: url('../img/UnselectedRooms.png');
     left: 54vw;
 }
 
@@ -202,11 +202,11 @@ nav {
 }
 
 #rooms.selected {
-    background-image: url('img/SelectedRooms.png');
+    background-image: url('../img/SelectedRooms.png');
 }
 
 #rooms:hover {
-    background-image: url('img/HoveredRooms.png');
+    background-image: url('../img/HoveredRooms.png');
     left: 53.5vw;
 }
 
@@ -218,7 +218,7 @@ nav {
 }
 
 #rooms:active {
-    background-image: url('img/ClickedRooms.png');
+    background-image: url('../img/ClickedRooms.png');
     left: 54.5vw;
 }
 
@@ -236,7 +236,7 @@ footer {
     width: 100vw;
     height: 30vw;
     position: absolute;
-    background-image: url('img/WoodenBase.jpg');
+    background-image: url('../img/WoodenBase.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgb(35,55,55);
