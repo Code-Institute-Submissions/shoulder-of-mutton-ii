@@ -1,0 +1,275 @@
+/* Default font for standard text */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    position: absolute;
+    width: 100vw;
+    font-family: 'Bitter', 'Rockwell Nova', 'Rockwell Regular', serif;
+    color: rgb(35,55,55);
+    font-size: 2.5vw;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        font-size: 2vw;
+    }
+}
+
+
+/* Navigation menu */
+
+nav {
+    background-image: url('img/BeerPumpHandles.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 37.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    nav {
+        background-image: url('img/WoodenPole.jpg');
+        width: 3vw;
+        height: 56vw;
+        left: 10.5vw;
+        top: 0vw;
+    }
+}
+
+#home, #beers, #rooms, #events {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    color: rgba(0,0,0,0);
+}
+
+#home {
+    background-image: url('img/UnselectedLogo.png');
+    width: 24vw;
+    height: 24vw;
+    top: 6vw;
+    left: 6vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #home {
+        width: 16vw;
+        height: 16vw;
+        left: -6.5vw;
+        top: 4vw;
+    }
+}
+
+#home.selected {
+    background-image: url('img/SelectedLogo.png');
+}
+
+#home:hover {
+    background-image: url('img/HoveredLogo.png');
+    width: 25vw;
+    height: 25vw;
+    left: 5.5vw;
+    top: 5.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #home:hover {
+        width: 17vw;
+        height: 17vw;
+        left: -7vw;
+        top: 3.5vw;
+    }
+}
+
+#home:active {
+    background-image: url('img/ClickedLogo.png');
+    width: 23vw;
+    height: 23vw;
+    left: 6.5vw;
+    top: 6.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #home:active {
+        width: 15vw;
+        height: 15vw;
+        left: -6vw;
+        top: 4.5vw;
+    }
+}
+
+#beers, #rooms, #events {
+    width: 18vw;
+    height: 18vw;
+    top: 9vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #beers, #rooms, #events {
+        width: 12vw;
+        height: 12vw;
+    }
+}
+
+#beers:hover, #rooms:hover, #events:hover {
+    width: 19vw;
+    height: 19vw;
+    top: 8.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #beers:hover, #rooms:hover, #events:hover {
+        width: 13vw;
+        height: 13vw;
+    }
+}
+
+#beers:active, #rooms:active, #events:active {
+    width: 17vw;
+    height: 17vw;
+    top: 9.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #beers:active, #rooms:active, #events:active {
+        width: 11vw;
+        height: 11vw;
+    }
+}
+
+#beers {
+    background-image: url('img/UnselectedBeers.png');
+    left: 33vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #beers {
+        left: -4.5vw;
+        top: 22vw;
+    }
+}
+
+#beers.selected {
+    background-image: url('img/SelectedBeers.png');
+}
+
+#beers:hover {
+    background-image: url('img/HoveredBeers.png');
+    left: 32.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #beers:hover {
+        left: -5vw;
+        top: 21.5vw;
+    }
+}
+
+#beers:active {
+    background-image: url('img/ClickedBeers.png');
+    left: 33.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #beers:active {
+        left: -4vw;
+        top: 22.5vw;
+    }
+}
+
+#rooms {
+    background-image: url('img/UnselectedRooms.png');
+    left: 54vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #rooms {
+        left: -4.5vw;
+        top: 36vw;
+    }
+}
+
+#rooms.selected {
+    background-image: url('img/SelectedRooms.png');
+}
+
+#rooms:hover {
+    background-image: url('img/HoveredRooms.png');
+    left: 53.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #rooms:hover {
+        left: -5vw;
+        top: 35.5vw;
+    }
+}
+
+#rooms:active {
+    background-image: url('img/ClickedRooms.png');
+    left: 54.5vw;
+}
+
+@media only screen and (orientation: landscape) {
+    #rooms:active {
+        left: -4vw;
+        top: 36.5vw;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    width: 100vw;
+    height: 30vw;
+    position: absolute;
+    background-image: url('img/WoodenBase.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(35,55,55);
+    text-align: center;
+    font-size: 2.5vw;
+    color: rgb(185,155,100);
+}
+
+footer section {
+    position: absolute;
+    bottom: 0vw;
+    padding: 5vw 10vw;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 2vw;
+}
+
+footer ul {
+    margin: 0vw;
+}
+
+footer li {
+    display: inline;
+    margin: 5vw;
+}
+
+footer i {
+    font-size: 200%;
+    color: rgb(185,155,100);
+}
+
+footer a {
+    color: rgb(185,155,100);
+}
