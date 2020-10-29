@@ -4,7 +4,53 @@ body {
     background-size: 100%;
     width: 100vw;
     height: 450vw;
-    animation: drink 30s forwards;
+    -webkit-animation: drink 30s forwards;
+            animation: drink 30s forwards;
+}
+
+@-webkit-keyframes drink {
+    0% {
+        background-image: url('../img/Glass13Portrait.jpg');
+    }
+    10% {
+        background-image: url('../img/Glass12Portrait.jpg');
+    }
+    17.5% {
+        background-image: url('../img/Glass11Portrait.jpg');
+    }
+    25% {
+        background-image: url('../img/Glass10Portrait.jpg');
+    }
+    32.5% {
+        background-image: url('../img/Glass9Portrait.jpg');
+    }
+    40% {
+        background-image: url('../img/Glass8Portrait.jpg');
+    }
+    47.5% {
+        background-image: url('../img/Glass7Portrait.jpg');
+    }
+    55% {
+        background-image: url('../img/Glass6Portrait.jpg');
+    }
+    62.5% {
+        background-image: url('../img/Glass5Portrait.jpg');
+    }
+    70% {
+        background-image: url('../img/Glass4Portrait.jpg');
+    }
+    77.5% {
+        background-image: url('../img/Glass3Portrait.jpg');
+    }
+    85% {
+        background-image: url('../img/Glass2Portrait.jpg');
+    }
+    92.5% {
+        background-image: url('../img/Glass1Portrait.jpg');
+    }
+    100% {
+        background-image: url('../img/Glass0Portrait.jpg');
+    }
 }
 
 @keyframes drink {
@@ -56,6 +102,51 @@ body {
     body {
         background-image: url('../img/Glass13Landscape.jpg');
         height: 200vw;
+    }
+
+    @-webkit-keyframes drink {
+        0% {
+        background-image: url('../img/Glass13Landscape.jpg');
+        }
+        10% {
+            background-image: url('../img/Glass12Landscape.jpg');
+        }
+        17.5% {
+            background-image: url('../img/Glass11Landscape.jpg');
+        }
+        25% {
+            background-image: url('../img/Glass10Landscape.jpg');
+        }
+        32.5% {
+            background-image: url('../img/Glass9Landscape.jpg');
+        }
+        40% {
+            background-image: url('../img/Glass8Landscape.jpg');
+        }
+        47.5% {
+            background-image: url('../img/Glass7Landscape.jpg');
+        }
+        55% {
+            background-image: url('../img/Glass6Landscape.jpg');
+        }
+        62.5% {
+            background-image: url('../img/Glass5Landscape.jpg');
+        }
+        70% {
+            background-image: url('../img/Glass4Landscape.jpg');
+        }
+        77.5% {
+            background-image: url('../img/Glass3Landscape.jpg');
+        }
+        85% {
+            background-image: url('../img/Glass2Landscape.jpg');
+        }
+        92.5% {
+            background-image: url('../img/Glass1Landscape.jpg');
+        }
+        100% {
+            background-image: url('../img/Glass0Landscape.jpg');
+        }
     }
 
     @keyframes drink {
@@ -126,7 +217,8 @@ body {
 #cushion {
     width: 80vw;
     height: 27vw;
-    shape-outside: polygon(45vw 0vw, 45vw 11vw, 35vw 20vw, 80vw 27vw, 0vw 27vw);
+    -webkit-shape-outside: polygon(45vw 0vw, 45vw 11vw, 35vw 20vw, 80vw 27vw, 0vw 27vw);
+            shape-outside: polygon(45vw 0vw, 45vw 11vw, 35vw 20vw, 80vw 27vw, 0vw 27vw);
     float: left;
 }
 
@@ -134,7 +226,8 @@ body {
     #cushion {
         width: 55vw;
         height: 21vw;
-        shape-outside: polygon(0vw 0vw, 22vw 5vw, 22vw 10vw, 18vw 15vw, 55vw 21vw, 0vw 21vw);
+        -webkit-shape-outside: polygon(0vw 0vw, 22vw 5vw, 22vw 10vw, 18vw 15vw, 55vw 21vw, 0vw 21vw);
+                shape-outside: polygon(0vw 0vw, 22vw 5vw, 22vw 10vw, 18vw 15vw, 55vw 21vw, 0vw 21vw);
     }
 }
 

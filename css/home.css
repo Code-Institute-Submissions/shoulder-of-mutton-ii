@@ -22,7 +22,17 @@ body {
     height: 112.5vw;
     left: 0vw;
     top: 0vw;
-    animation: outside 10s forwards;
+    -webkit-animation: outside 10s forwards;
+            animation: outside 10s forwards;
+}
+
+@-webkit-keyframes outside {
+    from {
+        background-size: 150%;
+    }
+    to {
+        background-size: 100%;
+    }
 }
 
 @keyframes outside {
@@ -82,7 +92,8 @@ main {
 #left {
     width: 38vw;
     height: 42vw;
-    shape-outside: polygon(0vw 0vw, 38vw 0vw, 38vw 42vw, 25vw 42vw, 37vw 35vw, 37vw 32vw, 0vw 6vw);
+    -webkit-shape-outside: polygon(0vw 0vw, 38vw 0vw, 38vw 42vw, 25vw 42vw, 37vw 35vw, 37vw 32vw, 0vw 6vw);
+            shape-outside: polygon(0vw 0vw, 38vw 0vw, 38vw 42vw, 25vw 42vw, 37vw 35vw, 37vw 32vw, 0vw 6vw);
     float: right;
 }
 
@@ -90,7 +101,8 @@ main {
     #left {
         width: 40vw;
         height: 27vw;
-        shape-outside: polygon(10vw 0vw, 40vw 0vw, 40vw 27vw, 0vw 27vw, 39vw 20vw);
+        -webkit-shape-outside: polygon(10vw 0vw, 40vw 0vw, 40vw 27vw, 0vw 27vw, 39vw 20vw);
+                shape-outside: polygon(10vw 0vw, 40vw 0vw, 40vw 27vw, 0vw 27vw, 39vw 20vw);
     }
 }
 
@@ -117,7 +129,8 @@ main {
 #right {
     width: 52vw;
     height: 42vw;
-    shape-outside: polygon(0vw 0vw, 2vw 0vw, 40vw 32vw, 40vw 36vw, 33vw 37vw, 37vw 42vw, 0vw 42vw);
+    -webkit-shape-outside: polygon(0vw 0vw, 2vw 0vw, 40vw 32vw, 40vw 36vw, 33vw 37vw, 37vw 42vw, 0vw 42vw);
+            shape-outside: polygon(0vw 0vw, 2vw 0vw, 40vw 32vw, 40vw 36vw, 33vw 37vw, 37vw 42vw, 0vw 42vw);
     float: left;
 }
 
@@ -125,7 +138,8 @@ main {
     #right {
         width: 50vw;
         height: 27vw;
-        shape-outside: polygon(0vw 0vw, 5vw 0vw, 30vw 19vw, 30vw 22vw, 23vw 23vw, 26vw 27vw, 0vw 27vw);
+        -webkit-shape-outside: polygon(0vw 0vw, 5vw 0vw, 30vw 19vw, 30vw 22vw, 23vw 23vw, 26vw 27vw, 0vw 27vw);
+                shape-outside: polygon(0vw 0vw, 5vw 0vw, 30vw 19vw, 30vw 22vw, 23vw 23vw, 26vw 27vw, 0vw 27vw);
     }
 }
 
@@ -148,7 +162,8 @@ main {
 #ceiling {
     width: 58vw;
     height: 42vw;
-    shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 21vw);
+    -webkit-shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 21vw);
+            shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 21vw);
     float: left;
 }
 
@@ -156,7 +171,8 @@ main {
     #ceiling {
         width: 53vw;
         height: 27vw;
-        shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 22vw);
+        -webkit-shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 22vw);
+                shape-outside: polygon(0vw 0vw, 36vw 0vw, 0vw 22vw);
     }
 }
 

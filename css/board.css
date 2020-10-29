@@ -2,15 +2,19 @@
 
 
 #board {
-    perspective-origin: 70vw 148.5vw;
-    perspective: 83vw;
+    -webkit-perspective-origin: 70vw 148.5vw;
+            perspective-origin: 70vw 148.5vw;
+    -webkit-perspective: 83vw;
+            perspective: 83vw;
     font-size: 1.5vw;
 }
 
 @media only screen and (orientation: landscape) {
     #board {
-        perspective-origin: 64vw 99vw;
-        perspective: 56vw;
+        -webkit-perspective-origin: 64vw 99vw;
+                perspective-origin: 64vw 99vw;
+        -webkit-perspective: 56vw;
+                perspective: 56vw;
     }
 }
 
@@ -18,14 +22,17 @@
     background-image: url('../img/BoardBack.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    animation: people 64s infinite;
+    -webkit-animation: people 64s infinite;
+            animation: people 64s infinite;
     position: absolute;
     left: 0.5vw;
     top: 91.5vw;
     width: 59vw;
     height: 79vw;
-    transform-style: preserve-3d;
-    transform: rotateX(7deg) rotateY(-20deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: rotateX(7deg) rotateY(-20deg);
+            transform: rotateX(7deg) rotateY(-20deg);
 }
 
 @media only screen and (orientation: landscape) {
@@ -34,6 +41,63 @@
         top: 61vw;
         width: 40vw;
         height: 53vw;
+    }
+}
+
+@-webkit-keyframes people {
+    0% {
+        background-image: url('../img/BoardBack.jpg');
+    }
+    4% {
+        background-image: url('../img/BoardBackOne.jpg');
+    }
+    10% {
+        background-image: url('../img/BoardBackTwo.jpg');
+    }
+    16% {
+        background-image: url('../img/BoardBackThree.jpg');
+    }
+    22% {
+        background-image: url('../img/BoardBackFour.jpg');
+    }
+    28% {
+        background-image: url('../img/BoardBackFive.jpg');
+    }
+    34% {
+        background-image: url('../img/BoardBackSix.jpg');
+    }
+    40% {
+        background-image: url('../img/BoardBackSeven.jpg');
+    }
+    46% {
+        background-image: url('../img/BoardBackEight.jpg');
+    }
+    52% {
+        background-image: url('../img/BoardBackNine.jpg');
+    }
+    58% {
+        background-image: url('../img/BoardBackTen.jpg');
+    }
+    64% {
+        background-image: url('../img/BoardBackEleven.jpg');
+    }
+    70% {
+        background-image: url('../img/BoardBackTwelve.jpg');
+    }
+    76% {
+        background-image: url('../img/BoardBackThirteen.jpg');
+    }
+    82% {
+        background-image: url('../img/BoardBackFourteen.jpg');
+    }
+    88% {
+        background-image: url('../img/BoardBackFifteen.jpg');
+    }
+    94% {
+        background-image: url('../img/BoardBackSixteen.jpg');
+    }
+    100% {
+        background-image: url('../img/BoardBack.jpg');
     }
 }
 
@@ -103,7 +167,8 @@
     background-image: url('../img/Tab.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    box-shadow: -0.1vw -0.1vw rgb(255,255,255), 0.1vw 0.1vw rgb(35,55,55);
+    -webkit-box-shadow: -0.1vw -0.1vw rgb(255,255,255), 0.1vw 0.1vw rgb(35,55,55);
+            box-shadow: -0.1vw -0.1vw rgb(255,255,255), 0.1vw 0.1vw rgb(35,55,55);
     line-height: 6vw;
     text-align: center;
 }
@@ -117,8 +182,10 @@
 }
 
 #loadone:checked ~ .one::after, #loadtwo:checked ~ .two::after, #loadthree:checked ~ .three::after, #loadfour:checked ~ .four::after, #loadfive:checked ~ .five::after, #loadsix:checked ~ .six::after, #loadseven:checked ~ .seven::after, #loadeight:checked ~ .eight::after, #loadnine:checked ~ .nine::after, #loadten:checked ~ .ten::after {
-    animation-duration: 2s;
-    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 
 .one::after, #first {
@@ -136,7 +203,19 @@
 }
 
 #loadone:checked ~ .one::after {
-    animation-name: firsttab;
+    -webkit-animation-name: firsttab;
+            animation-name: firsttab;
+}
+
+@-webkit-keyframes firsttab {
+    from {
+        content: " ";
+        left: 31vw;
+    }
+    to {
+        content: "A famously quirky three sided bar...";
+        left: 0vw;
+    }
 }
 
 @keyframes firsttab {
@@ -166,7 +245,19 @@
 }
 
 #loadtwo:checked ~ .two::after {
-    animation-name: secondtab;
+    -webkit-animation-name: secondtab;
+            animation-name: secondtab;
+}
+
+@-webkit-keyframes secondtab {
+    from {
+        content: " ";
+        left: 36vw;
+    }
+    to {
+        content: "...an open fireplace and a comfy snug...";
+        left: 0vw;
+    }
 }
 
 @keyframes secondtab {
@@ -196,7 +287,19 @@
 }
 
 #loadthree:checked ~ .three::after {
-    animation-name: thirdtab;
+    -webkit-animation-name: thirdtab;
+            animation-name: thirdtab;
+}
+
+@-webkit-keyframes thirdtab {
+    from {
+        content: " ";
+        left: 26vw;
+    }
+    to {
+        content: "...all help make it a welcoming place.";
+        left: 0vw;
+    }
 }
 
 @keyframes thirdtab {
@@ -225,7 +328,19 @@
 }
 
 #loadfour:checked ~ .four::after {
-    animation-name: fourthtab;
+    -webkit-animation-name: fourthtab;
+            animation-name: fourthtab;
+}
+
+@-webkit-keyframes fourthtab {
+    from {
+        content: " ";
+        left: 33vw;
+    }
+    to {
+        content: "Of course, the real feel...";
+        left: 0vw;
+    }
 }
 
 @keyframes fourthtab {
@@ -255,7 +370,19 @@
 }
 
 #loadfive:checked ~ .five::after {
-    animation-name: fifthtab;
+    -webkit-animation-name: fifthtab;
+            animation-name: fifthtab;
+}
+
+@-webkit-keyframes fifthtab {
+    from {
+        content: " ";
+        left: 23vw;
+    }
+    to {
+        content: "...is down to our customers.";
+        left: 0vw;
+    }
 }
 
 @keyframes fifthtab {
@@ -285,7 +412,19 @@
 }
 
 #loadsix:checked ~ .six::after {
-    animation-name: sixthtab;
+    -webkit-animation-name: sixthtab;
+            animation-name: sixthtab;
+}
+
+@-webkit-keyframes sixthtab {
+    from {
+        content: " ";
+        left: 29vw;
+    }
+    to {
+        content: "We are proud to be home...";
+        left: 0vw;
+    }
 }
 
 @keyframes sixthtab {
@@ -315,7 +454,19 @@
 }
 
 #loadseven:checked ~ .seven::after {
-    animation-name: seventhtab;
+    -webkit-animation-name: seventhtab;
+            animation-name: seventhtab;
+}
+
+@-webkit-keyframes seventhtab {
+    from {
+        content: " ";
+        left: 24vw;
+    }
+    to {
+        content: "...to a whole host of characters.";
+        left: 0vw;
+    }
 }
 
 @keyframes seventhtab {
@@ -344,7 +495,19 @@
 }
 
 #loadeight:checked ~ .eight::after {
-    animation-name: eighthtab;
+    -webkit-animation-name: eighthtab;
+            animation-name: eighthtab;
+}
+
+@-webkit-keyframes eighthtab {
+    from {
+        content: " ";
+        left: 34vw;
+    }
+    to {
+        content: "Artists, brewers, musicians...";
+        left: 0vw;
+    }
 }
 
 @keyframes eighthtab {
@@ -374,7 +537,19 @@
 }
 
 #loadnine:checked ~ .nine::after {
-    animation-name: ninthtab;
+    -webkit-animation-name: ninthtab;
+            animation-name: ninthtab;
+}
+
+@-webkit-keyframes ninthtab {
+    from {
+        content: " ";
+        left: 27vw;
+    }
+    to {
+        content: "...scientists and craftsmen.";
+        left: 0vw;
+    }
 }
 
 @keyframes ninthtab {
@@ -404,7 +579,21 @@
 }
 
 #loadten:checked ~ .ten::after {
-    animation-name: tenthtab;
+    -webkit-animation-name: tenthtab;
+            animation-name: tenthtab;
+}
+
+@-webkit-keyframes tenthtab {
+    from {
+        content: " ";
+        left: 32vw;
+        text-align: right;
+    }
+    to {
+        content: "You're certain to find a great conversation.";
+        left: 0vw;
+        text-align: center;
+    }
 }
 
 @keyframes tenthtab {

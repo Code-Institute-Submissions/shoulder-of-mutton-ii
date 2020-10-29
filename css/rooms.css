@@ -16,14 +16,18 @@ body {
 }
 
 main {
-    perspective-origin: 120vw 300vw;
-    perspective: 80vw;
+    -webkit-perspective-origin: 120vw 300vw;
+            perspective-origin: 120vw 300vw;
+    -webkit-perspective: 80vw;
+            perspective: 80vw;
 }
 
 @media only screen and (orientation: landscape) {
     main {
-        perspective-origin: 80vw 100vw;
-        perspective: 40vw;
+        -webkit-perspective-origin: 80vw 100vw;
+                perspective-origin: 80vw 100vw;
+        -webkit-perspective: 40vw;
+                perspective: 40vw;
     }
 }
 
@@ -33,11 +37,14 @@ main {
     height: 73.5vw;
     left: 19.5vw;
     top: 123.75vw;
-    transform-style: preserve-3d;
-    transform: rotateX(2deg) rotateY(-1.25deg) rotateZ(-3.5deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: rotateX(2deg) rotateY(-1.25deg) rotateZ(-3.5deg);
+            transform: rotateX(2deg) rotateY(-1.25deg) rotateZ(-3.5deg);
     background-size: 65.25vw 63.5vw;
     background-repeat: no-repeat;
-    animation: rooms 60s infinite;
+    -webkit-animation: rooms 60s infinite;
+            animation: rooms 60s infinite;
     font-size: 4vw;
     text-align: center;
     color: rgb(185,155,100);
@@ -49,7 +56,8 @@ main {
         height: 42vw;
         left: 30vw;
         top: 14vw;
-        transform: rotateX(2deg) rotateY(-1.25deg) rotateZ(-3.5deg);
+        -webkit-transform: rotateX(2deg) rotateY(-1.25deg) rotateZ(-3.5deg);
+                transform: rotateX(2deg) rotateY(-1.25deg) rotateZ(-3.5deg);
         background-size: 32.75vw 32vw;
         font-size: 2vw;
     }
@@ -62,6 +70,53 @@ main {
 @media only screen and (orientation: landscape) {
     #sign p {
         margin-top: 33.5vw;
+    }
+}
+
+@-webkit-keyframes rooms {
+    0% {
+        background-image: url('../img/BlueRoom.jpg');
+        opacity: 0;
+    }
+    10% {
+        background-image: url('../img/BlueRoom.jpg');
+        opacity: 1;
+    }
+    20% {
+        background-image: url('../img/RedRoom.jpg');
+        opacity: 1;
+    }
+    30% {
+        background-image: url('../img/Shower.jpg');
+        opacity: 1;
+    }
+    40% {
+        background-image: url('../img/TurquoiseRoom.jpg');
+        opacity: 1;
+    }
+    50% {
+        background-image: url('../img/BlueRoomBed.jpg');
+        opacity: 1;
+    }
+    60% {
+        background-image: url('../img/Ensuite.jpg');
+        opacity: 1;
+    }
+    70% {
+        background-image: url('../img/RedRoomBed.jpg');
+        opacity: 1;
+    }
+    80% {
+        background-image: url('../img/TurquoiseRoomBed.jpg');
+        opacity: 1;
+    }
+    90% {
+        background-image: url('../img/Bathroom.jpg');
+        opacity: 1;
+    }
+    100% {
+        background-image: url('../img/Bathroom.jpg');
+        opacity: 0;
     }
 }
 
@@ -118,7 +173,8 @@ main {
     left: 40vw;
     top: 50vw;
     padding: 5vw;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 @media only screen and (orientation: landscape) {

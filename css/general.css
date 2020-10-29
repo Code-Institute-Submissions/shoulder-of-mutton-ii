@@ -249,7 +249,8 @@ footer section {
     position: absolute;
     bottom: 0vw;
     padding: 5vw 10vw;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 footer p {
